@@ -408,6 +408,57 @@ const Projects = () => {
   //   </section>
   // );
 
+  // return (
+  //   <section id="projects" className="py-20 relative">
+  //     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  //       <h2 className="text-3xl font-extrabold text-white mb-12 text-center tracking-tight">Featured Projects</h2>
+  //       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  //         {projects.map((project, index) => (
+  //           <div key={index} className="glass-card rounded-2xl flex flex-col h-full group">
+  //             <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent opacity-50 pointer-events-none"></div>
+              
+  //             <div className="p-8 flex-grow relative z-10">
+  //               <div className="flex justify-between items-start mb-6">
+  //                 <h3 className="text-xl font-bold text-white group-hover:text-teal-400 transition-colors pr-2">{project.title}</h3>
+  //                 <ExternalLink className="w-6 h-6 text-slate-500 group-hover:text-teal-400 cursor-pointer transition-colors flex-shrink-0" />
+  //               </div>
+                
+  //               <ul className="text-slate-300 mb-6 text-sm leading-relaxed font-medium space-y-3">
+  //                 {project.description}
+  //               </ul>
+  //             </div>
+
+  //             <div className="px-8 pb-8 pt-0 mt-auto relative z-10 flex flex-col gap-5">
+                
+  //               <div className="flex flex-wrap gap-2">
+  //                 {project.tags.map((tag, i) => (
+  //                   <span key={i} className="px-3 py-1 bg-teal-400/10 border border-teal-400/30 text-teal-300 text-xs font-bold rounded-lg shadow-sm">
+  //                     {tag}
+  //                   </span>
+  //                 ))}
+  //               </div>
+
+  //               {/* ONLY show buttons for the very first project (Supply Chain) */}
+  //               {index === 0 && (
+  //                 <div className="flex gap-3">
+  //                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 bg-teal-400 text-slate-950 text-xs font-bold rounded-lg hover:bg-teal-300 transition-colors shadow-sm">
+  //                     View Project
+  //                   </a>
+  //                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 border border-white/20 text-white text-xs font-bold rounded-lg hover:bg-white/10 transition-colors shadow-sm">
+  //                     View Code
+  //                   </a>
+  //                 </div>
+  //               )}
+
+  //             </div>
+  //           </div>
+  //         ))}
+  //       </div>
+  //     </div>
+  //   </section>
+  // );
+
+
   return (
     <section id="projects" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -438,14 +489,11 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* ONLY show buttons for the very first project (Supply Chain) */}
+                {/* ONLY show the View Project button for the first project */}
                 {index === 0 && (
                   <div className="flex gap-3">
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 bg-teal-400 text-slate-950 text-xs font-bold rounded-lg hover:bg-teal-300 transition-colors shadow-sm">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="w-full text-center py-2.5 bg-teal-400 text-slate-950 text-xs font-bold rounded-lg hover:bg-teal-300 transition-colors shadow-sm">
                       View Project
-                    </a>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 border border-white/20 text-white text-xs font-bold rounded-lg hover:bg-white/10 transition-colors shadow-sm">
-                      View Code
                     </a>
                   </div>
                 )}
