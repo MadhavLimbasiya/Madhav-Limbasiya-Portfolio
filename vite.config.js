@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/react-bootstrap' // or your framework plugin
 
 export default defineConfig({
+  base: '/Madhav-Limbasiya-Portfolio/', // Add this line
   plugins: [react()],
-  base: '/Madhav-Limbasiya-Portfolio/', // Replace with your exact GitHub repo name
 })
