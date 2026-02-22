@@ -169,26 +169,27 @@ const About = () => {
 
 const Experience = () => {
   const experiences = [
-    {
-      role: "Junior Database Administrator",
-      company: "ASQUARE Tech Lab LLP",
-      date: "May 2023 - Jul 2024",
-      points: [
-        "Optimized database infrastructure and data architecture to ensure highly efficient data extraction for downstream analytical reporting.",
-        "Implemented rigorous data validation and quality checks to maintain high data integrity.",
-        "Authored and optimized complex SQL queries, significantly reducing data retrieval latency."
-      ]
-    },
-    {
-      role: "Web Developer Intern",
-      company: "SVIQ Solution LLP",
-      date: "Jan 2023 - Apr 2023",
-      points: [
-        "Optimized website performance and user experience by analyzing user interaction patterns.",
-        "Maintained back-end systems and database connections (SQL), systematically troubleshooting technical issues to ensure reliable data flow."
-      ]
-    }
-  ];
+  {
+    role: "Junior Database Administrator",
+    company: "Asquare Tech Lab LLP",
+    date: "05/2023 - 07/2024",
+    points: [
+      "Optimized data architecture for high-volume datasets (100GB+), improving data extraction efficiency for downstream business intelligence reporting by 30%.",
+      "Automated data validation pipelines using SQL, maintaining 99.9% data integrity across production environments and reducing manual audit time by 15 hours/week.",
+      "Engineered complex SQL indexing strategies that reduced query latency for critical financial reports, enabling faster executive decision-making."
+    ]
+  },
+  {
+    role: "Web Developer Intern",
+    company: "SVIQ Solution LLP",
+    date: "01/2023 - 04/2023",
+    points: [
+      "Analyzed user interaction patterns and web telemetry data to identify navigation bottlenecks, resulting in a 20% increase in user engagement scores.",
+      "Maintained back-end SQL database connections, troubleshooting data-flow issues to ensure 100% uptime for client-facing features.",
+      "Collaborated with cross-functional teams to translate user behavior data into technical requirements for UI/UX improvements."
+    ]
+  }
+];
 
   return (
     <section id="experience" className="py-20 relative">
@@ -321,22 +322,91 @@ const Skills = () => {
 
 const Projects = () => {
   const projects = [
-    {
-      title: "DataCo Supply Chain Intelligence Suite",
-      description: "Engineered an interactive Tableau dashboard analyzing global sales data to visualize profitability hotspots and revenue trends. Implemented 'Demand Sensing' to enable proactive supply chain adjustments.",
-      tags: ["Tableau", "SQL", "Business Intelligence", "Data Blending"]
-    },
-    {
-      title: "Restaurant Management System",
-      description: "Built an end-to-end system with a real-time analytics dashboard evaluating sales, feedback sentiment, and staff performance, streamlining operations by 40%.",
-      tags: ["SQL", "Full-Stack", "Analytics", "Performance Metrics"]
-    },
-    {
-      title: "Medical Imaging Data Extraction pipeline",
-      description: "Developed a processing architecture using Python for medical scan segmentation (U-Net), managing the data pipeline to achieve 85% accuracy and automate feature extraction.",
-      tags: ["Python", "Data Processing", "Machine Learning"]
-    }
-  ];
+  {
+    title: "Supply Chain Intelligence Suite",
+    description: [
+      <li key="1"><b>Situation:</b> Global supply chain lacked visibility into localized profitability and demand shifts.</li>,
+      <li key="2"><b>Action:</b> Developed an end-to-end Tableau suite integrating SQL-extracted data to visualize revenue trends and forecast demand.</li>,
+      <li key="3"><b>Result:</b> Identified high-cost hotspots, providing actionable insights for strategic resource allocation.</li>
+    ],
+    tags: ["Tableau", "SQL", "Demand Forecasting"],
+    link: "https://public.tableau.com/app/profile/madhav.limbasiya/viz/DataCoSupplyChainIntelligenceSuite/01_Performance_Pulse#1", 
+    github: "https://github.com/MadhavLimbasiya"
+  },
+  {
+    title: "Restaurant Management Analytics",
+    description: [
+      <li key="1"><b>Situation:</b> Inefficient manual tracking led to operational bottlenecks and delayed performance reviews.</li>,
+      <li key="2"><b>Action:</b> Built an end-to-end system integrating a real-time analytics dashboard using SQL to evaluate sales, feedback sentiment, and staff performance.</li>,
+      <li key="3"><b>Result:</b> Streamlined operations by 40% and improved data-driven decision-making for management.</li>
+    ],
+    tags: ["SQL", "Analytics", "Performance Metrics", "Full-Stack"],
+    link: "https://github.com/MadhavLimbasiya", // Replace with live link if you have one deployed
+    github: "https://github.com/MadhavLimbasiya"
+  },
+  {
+    title: "Medical Image Segmentation (U-Net)",
+    description: [
+      <li key="1"><b>Situation:</b> Manual lesion detection in medical scans was time-intensive and prone to human error.</li>,
+      <li key="2"><b>Action:</b> Built a U-Net Deep Learning model using Python and CNNs to automate gastro-intestinal segmentation.</li>,
+      <li key="3"><b>Result:</b> Achieved 85% Dice accuracy, significantly accelerating the diagnostic pipeline for clinical review.</li>
+    ],
+    tags: ["Python", "Deep Learning", "CNNs"],
+    link: "https://github.com/MadhavLimbasiya", // Replace with a link to a demo or paper if available
+    github: "https://github.com/MadhavLimbasiya"
+  }
+];
+
+  // return (
+  //   <section id="projects" className="py-20 relative">
+  //     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  //       <h2 className="text-3xl font-extrabold text-white mb-12 text-center tracking-tight">Featured Projects</h2>
+  //       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  //         {projects.map((project, index) => (
+  //           <div key={index} className="glass-card rounded-2xl flex flex-col h-full group">
+  //             <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent opacity-50 pointer-events-none"></div>
+              
+  //             <div className="p-8 flex-grow relative z-10">
+  //               <div className="flex justify-between items-start mb-6">
+  //                 {/* Reduced title text size slightly to prevent awkward wrapping in 3 columns */}
+  //                 <h3 className="text-xl font-bold text-white group-hover:text-teal-400 transition-colors pr-2">{project.title}</h3>
+  //                 <ExternalLink className="w-6 h-6 text-slate-500 group-hover:text-teal-400 cursor-pointer transition-colors flex-shrink-0" />
+  //               </div>
+                
+  //               {/* CHANGED: Replaced <p> with <ul> to support your <li> description array */}
+  //               <ul className="text-slate-300 mb-6 text-sm leading-relaxed font-medium space-y-3">
+  //                 {project.description}
+  //               </ul>
+  //             </div>
+
+  //             {/* CHANGED: Added flex-col and gap-5 to stack tags and buttons */}
+  //             <div className="px-8 pb-8 pt-0 mt-auto relative z-10 flex flex-col gap-5">
+                
+  //               <div className="flex flex-wrap gap-2">
+  //                 {project.tags.map((tag, i) => (
+  //                   <span key={i} className="px-3 py-1 bg-teal-400/10 border border-teal-400/30 text-teal-300 text-xs font-bold rounded-lg shadow-sm">
+  //                     {tag}
+  //                   </span>
+  //                 ))}
+  //               </div>
+
+  //               {/* NEW: Inserted Action Buttons */}
+  //               <div className="flex gap-3">
+  //                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 bg-teal-400 text-slate-950 text-xs font-bold rounded-lg hover:bg-teal-300 transition-colors shadow-sm">
+  //                   View Project
+  //                 </a>
+  //                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 border border-white/20 text-white text-xs font-bold rounded-lg hover:bg-white/10 transition-colors shadow-sm">
+  //                   View Code
+  //                 </a>
+  //               </div>
+
+  //             </div>
+  //           </div>
+  //         ))}
+  //       </div>
+  //     </div>
+  //   </section>
+  // );
 
   return (
     <section id="projects" className="py-20 relative">
@@ -346,16 +416,20 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div key={index} className="glass-card rounded-2xl flex flex-col h-full group">
               <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent opacity-50 pointer-events-none"></div>
+              
               <div className="p-8 flex-grow relative z-10">
                 <div className="flex justify-between items-start mb-6">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-teal-400 transition-colors">{project.title}</h3>
-                  <ExternalLink className="w-6 h-6 text-slate-500 group-hover:text-teal-400 cursor-pointer transition-colors" />
+                  <h3 className="text-xl font-bold text-white group-hover:text-teal-400 transition-colors pr-2">{project.title}</h3>
+                  <ExternalLink className="w-6 h-6 text-slate-500 group-hover:text-teal-400 cursor-pointer transition-colors flex-shrink-0" />
                 </div>
-                <p className="text-slate-300 mb-6 text-base leading-relaxed font-medium">
+                
+                <ul className="text-slate-300 mb-6 text-sm leading-relaxed font-medium space-y-3">
                   {project.description}
-                </p>
+                </ul>
               </div>
-              <div className="px-8 pb-8 pt-0 mt-auto relative z-10">
+
+              <div className="px-8 pb-8 pt-0 mt-auto relative z-10 flex flex-col gap-5">
+                
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, i) => (
                     <span key={i} className="px-3 py-1 bg-teal-400/10 border border-teal-400/30 text-teal-300 text-xs font-bold rounded-lg shadow-sm">
@@ -363,6 +437,19 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+
+                {/* ONLY show buttons for the very first project (Supply Chain) */}
+                {index === 0 && (
+                  <div className="flex gap-3">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 bg-teal-400 text-slate-950 text-xs font-bold rounded-lg hover:bg-teal-300 transition-colors shadow-sm">
+                      View Project
+                    </a>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-2.5 border border-white/20 text-white text-xs font-bold rounded-lg hover:bg-white/10 transition-colors shadow-sm">
+                      View Code
+                    </a>
+                  </div>
+                )}
+
               </div>
             </div>
           ))}
