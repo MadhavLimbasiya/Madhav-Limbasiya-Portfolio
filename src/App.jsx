@@ -122,7 +122,7 @@ const Hero = () => {
               </a>
              
   <a 
-    href="/Madhav_Limbasiya_Resume.pdf" 
+    href="./Madhav_Limbasiya_Resume.pdf" 
     target="_blank" 
     rel="noopener noreferrer"
     className="inline-flex items-center px-8 py-3.5 border border-white/20 text-base font-bold rounded-xl text-white bg-white/5 backdrop-blur-md hover:border-teal-400 hover:bg-white/10 transition-all duration-300 group"
@@ -137,7 +137,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-teal-400 to-cyan-500 blur-2xl opacity-50"></div>
               <div className="relative w-full h-full rounded-full border-2 border-white/20 bg-slate-900/50 backdrop-blur-sm shadow-2xl overflow-hidden p-2">
                 <img 
-                  src="/profile.jpg" 
+                  src="./profile.jpg" 
                   alt="Madhav Limbasiya" 
                   className="w-full h-full object-cover rounded-full"
                 />
