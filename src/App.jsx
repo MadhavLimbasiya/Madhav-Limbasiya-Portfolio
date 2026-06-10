@@ -400,6 +400,18 @@ return (
                     </span>
                   ))}
                 </div>
+                {project.link && (
+  <div className="flex gap-3">
+    <a href={project.link} target="_blank" rel="noopener noreferrer"
+      className="flex-1 text-center py-2.5 bg-teal-400 text-slate-950 text-xs font-bold rounded-lg hover:bg-teal-300 transition-colors shadow-sm">
+      View Project
+    </a>
+    <a href={project.github} target="_blank" rel="noopener noreferrer"
+      className="flex-1 text-center py-2.5 border border-white/20 text-white text-xs font-bold rounded-lg hover:bg-white/10 transition-colors shadow-sm">
+      GitHub
+    </a>
+  </div>
+)}
 
               </div>
             </div>
