@@ -334,15 +334,15 @@ const Projects = () => {
     github: "https://github.com/MadhavLimbasiya"
   },
   {
-    title: "Restaurant Management Analytics",
-    description: [
-      <li key="1"><b>Situation:</b> Inefficient manual tracking led to operational bottlenecks and delayed performance reviews.</li>,
-      <li key="2"><b>Action:</b> Built an end-to-end system integrating a real-time analytics dashboard using SQL to evaluate sales, feedback sentiment, and staff performance.</li>,
-      <li key="3"><b>Result:</b> Streamlined operations by 40% and improved data-driven decision-making for management.</li>
-    ],
-    tags: ["SQL", "Analytics", "Performance Metrics", "Full-Stack"],
-    link: "https://github.com/MadhavLimbasiya", // Replace with live link if you have one deployed
-    github: "https://github.com/MadhavLimbasiya"
+  title: "BioThreat Intelligence Platform",
+  description: [
+    <li key="1"><b>Situation:</b> Drug discovery and conservation biology data existed in silos with no unified decision framework across species threat and scientific value.</li>,
+    <li key="2"><b>Action:</b> Built a 5-page end-to-end Power BI dashboard integrating real GBIF API occurrence data, IUCN Red List status, and a full pharma pipeline — field expedition to active hit — with a Risk vs Opportunity quadrant matrix.</li>,
+    <li key="3"><b>Result:</b> Delivered a dual-mandate decision engine tracking 838 species across 233 countries, surfacing KPIs like IC50 potency, hit rate %, yield %, and pipeline ROI across 150 compounds.</li>
+  ],
+  tags: ["Power BI", "DAX", "Python", "GBIF API", "IUCN", "Star Schema"],
+  link: "https://app.powerbi.com/reportEmbed?reportId=c900167b-fb93-4cc7-a649-5aac034bb3bb&autoAuth=true&ctid=51a6364a-0466-47d0-b3ba-1517161ddd0d",
+  github: "https://github.com/MadhavLimbasiya/BioThreat-Intelligence-Platform"
   },
   {
     title: "Medical Image Segmentation (U-Net)",
@@ -353,6 +353,17 @@ const Projects = () => {
     ],
     tags: ["Python", "Deep Learning", "CNNs"],
     link: "https://github.com/MadhavLimbasiya", // Replace with a link to a demo or paper if available
+    github: "https://github.com/MadhavLimbasiya"
+  },
+  {
+    title: "Restaurant Management Analytics",
+    description: [
+      <li key="1"><b>Situation:</b> Inefficient manual tracking led to operational bottlenecks and delayed performance reviews.</li>,
+      <li key="2"><b>Action:</b> Built an end-to-end system integrating a real-time analytics dashboard using SQL to evaluate sales, feedback sentiment, and staff performance.</li>,
+      <li key="3"><b>Result:</b> Streamlined operations by 40% and improved data-driven decision-making for management.</li>
+    ],
+    tags: ["SQL", "Analytics", "Performance Metrics", "Full-Stack"],
+    link: "https://github.com/MadhavLimbasiya", // Replace with live link if you have one deployed
     github: "https://github.com/MadhavLimbasiya"
   }
 ];
