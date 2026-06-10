@@ -336,14 +336,14 @@ const Projects = () => {
   {
   title: "BioThreat Intelligence Platform",
   description: [
-    <li key="1"><b>Situation:</b> Drug discovery and conservation biology data existed in silos with no unified decision framework across species threat and scientific value.</li>,
-    <li key="2"><b>Action:</b> Built a 5-page end-to-end Power BI dashboard integrating real GBIF API occurrence data, IUCN Red List status, and a full pharma pipeline — field expedition to active hit — with a Risk vs Opportunity quadrant matrix.</li>,
-    <li key="3"><b>Result:</b> Delivered a dual-mandate decision engine tracking 838 species across 233 countries, surfacing KPIs like IC50 potency, hit rate %, yield %, and pipeline ROI across 150 compounds.</li>
+    <li key="1"><b>Situation:</b> Drug discovery and conservation biology data existed in silos with no unified decision framework.</li>,
+    <li key="2"><b>Action:</b> Built a 5-page Power BI dashboard integrating GBIF API, IUCN Red List, and a full pharma pipeline using Python, DAX, and a star schema model.</li>,
+    <li key="3"><b>Result:</b> Tracked 838 species across 233 countries, surfacing KPIs like IC50, hit rate %, yield %, and pipeline ROI across 150 compounds.</li>
   ],
   tags: ["Power BI", "DAX", "Python", "GBIF API", "IUCN", "Star Schema"],
   link: "https://app.powerbi.com/reportEmbed?reportId=c900167b-fb93-4cc7-a649-5aac034bb3bb&autoAuth=true&ctid=51a6364a-0466-47d0-b3ba-1517161ddd0d",
   github: "https://github.com/MadhavLimbasiya/BioThreat-Intelligence-Platform"
-  },
+},
   {
     title: "Medical Image Segmentation (U-Net)",
     description: [
