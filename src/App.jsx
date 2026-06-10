@@ -268,22 +268,22 @@ const Skills = () => {
     {
       title: "Data & Databases",
       icon: <Database className="w-6 h-6 text-teal-400" />,
-      skills: ["MySQL", "MongoDB", "Oracle Database", "SQL Architecture"]
+      skills: ["MySQL", "MongoDB", "SQL Architecture", "Data Modeling"]
     },
     {
       title: "Data Visualization",
       icon: <BarChart3 className="w-6 h-6 text-cyan-400" />,
-      skills: ["Tableau", "Power BI", "Dashboards", "Reporting"]
+      skills: ["Tableau", "Power BI", "DAX", "KPI Dashboards"]
     },
     {
       title: "Programming",
       icon: <Code className="w-6 h-6 text-teal-400" />,
-      skills: ["Python", "SQL", "JavaScript", "HTML/CSS"]
+      skills: ["Python", "SQL", "JavaScript", "HTML/CSS", "ETL Pipelines"]
     },
     {
       title: "Advanced Analytics",
       icon: <BrainCircuit className="w-6 h-6 text-cyan-400" />,
-      skills: ["Predictive Modeling", "Data Wrangling", "Statistical Analysis"]
+      skills: ["Data Wrangling", "Statistical Analysis", "Risk-Opportunity Modeling"]
     },
     {
       title: "Tools & Soft Skills",
