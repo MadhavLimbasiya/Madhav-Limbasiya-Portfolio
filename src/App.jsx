@@ -331,7 +331,7 @@ const Projects = () => {
     ],
     tags: ["Tableau", "SQL", "Demand Forecasting"],
     link: "https://public.tableau.com/app/profile/madhav.limbasiya/viz/DataCoSupplyChainIntelligenceSuite/01_Performance_Pulse#1", 
-    github: "https://github.com/MadhavLimbasiya"
+    github: "https://github.com/MadhavLimbasiya/DataCo-Supply-Chain-Intelligence-Suite"
   },
   {
   title: "BioThreat Intelligence Platform",
