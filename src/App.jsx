@@ -159,8 +159,8 @@ const About = () => {
           {/* Subtle reflection overlay for glass */}
           <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent opacity-50 pointer-events-none"></div>
           <p className="text-lg text-slate-300 leading-relaxed font-medium relative z-10">
-            Technical Data Analyst skilled in data architecture, large-scale databases (MySQL, MongoDB), Tableau, and Power BI. I have hands-on experience analyzing complex datasets to uncover supply chain profitability and revenue trends. By focusing on robust automated analytical pipelines and advanced data extraction techniques, I bridge the gap between backend data integrity and frontend business intelligence to solve complex organizational challenges.
-          </p>
+  Technical Data Analyst skilled in data architecture, large-scale databases (MySQL, MongoDB), and BI tools like Tableau and Power BI. I work end-to-end — from cleaning and modeling raw data to building interactive dashboards such as a BioThreat intelligence platform that connects drug discovery pipelines with conservation risk. By focusing on robust analytical pipelines and clear visual narratives, I bridge the gap between backend data integrity and frontend decision-making for real business and scientific problems.
+</p>
         </div>
       </div>
     </section>
@@ -240,7 +240,7 @@ const Education = () => {
             <p className="text-lg text-slate-200 font-semibold mb-1">Texas State University</p>
             <p className="text-slate-400 mb-6 font-medium">San Marcos, Texas</p>
             <span className="inline-block bg-teal-400/20 border border-teal-400/30 text-teal-300 px-4 py-1.5 rounded-full text-sm font-bold shadow-md">
-              GPA: 3.36/4
+              GPA: 3.42/4
             </span>
           </div>
 
