@@ -400,6 +400,8 @@ return (
                     </span>
                   ))}
                 </div>
+
+                {/* BUTTONS HIDDEN - enable later
                 {project.link && (
   <div className="flex gap-3">
     <a href={project.link} target="_blank" rel="noopener noreferrer"
@@ -412,6 +414,8 @@ return (
     </a>
   </div>
 )}
+
+*/}
 
               </div>
             </div>
